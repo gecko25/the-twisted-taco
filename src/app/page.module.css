@@ -8,13 +8,31 @@
   padding: 5px 20px
 }
 
+.subtitle {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+
 .logo {
-  margin: 20px 0;
+  margin: 10px 0;
+}
+
+.tacogrid {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  background-image: url('/tacos-grid.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 400px;
+  margin: 10px auto;
 }
 
 .description p {
   font-size: 1.5rem;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .description {
