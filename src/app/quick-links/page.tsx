@@ -8,10 +8,10 @@ export default function QuickLinks() {
       <Link href="/">
       <Image
         className={styles.logo}
-        src="/green_black_logo.png"
+        src="/logo.png"
         alt="Twisted Taco Logo"
-        width={350}
-        height={220}
+        width={310}
+        height={200}
         priority
       />
       </Link>
@@ -54,7 +54,7 @@ export default function QuickLinks() {
         </p>
 
         <p>
-          Or give us a call or email to schedule a catering event.
+          Or give us a call, text or email to schedule a catering event.
         </p>
       </div>
 

@@ -6,10 +6,10 @@ export default function Home() {
     <main className={styles.main}>
       <Image
         className={styles.logo}
-        src="/green_black_logo.png"
+        src="/logo.png"
         alt="Twisted Taco Logo"
-        width={300}
-        height={180}
+        width={310}
+        height={200}
         priority
       />
 
@@ -33,7 +33,7 @@ export default function Home() {
         </p>
 
         <p>
-          Or give us a <a href="tel:4105002906">call</a> or <a href="mailto:thetwistedtaco516@gmail.com">email</a> to schedule a catering event.
+          Or give us a <a href="tel:4105002906">call, text</a> or <a href="mailto:thetwistedtaco516@gmail.com">email</a> to schedule a catering event.
         </p>
       </div>
 
