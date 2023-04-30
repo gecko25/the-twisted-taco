@@ -8,8 +8,8 @@ export default function Home() {
         className={styles.logo}
         src="/logo.png"
         alt="Twisted Taco Logo"
-        width={310}
-        height={200}
+        width={250}
+        height={170}
         priority
       />
 

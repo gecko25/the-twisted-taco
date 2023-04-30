@@ -16,11 +16,9 @@ export default function CincoDeMayo2023() {
       />
       </Link>
 
-      <h1>Cinco de Mayo</h1>
+      <h1>Cinco de Mayo Menu 2023</h1>
       <h2>Nolans Pub in Long Beach</h2>
       <h3>Please join us from 4-8pm</h3>
-
-      <h1 style={{ marginTop: '40px', fontSize: '2.8rem'}}>MENU</h1>
 
 <div className={styles.links}>
 
