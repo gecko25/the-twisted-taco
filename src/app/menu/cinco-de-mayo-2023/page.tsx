@@ -33,8 +33,13 @@ export default function CincoDeMayo2023() {
       </div>
 
       <div className={styles.card}>
-        <h4>Califlower</h4>
-        <p>Beer batterred fried califlower topped with red cabbage coleslaw and chipotle mayo</p>
+        <h4>Fried Califlower</h4>
+        <p>Beer batterred fried califlower topped with red cabbage coleslaw and chipotle mayo.</p>
+      </div>
+
+      <div className={styles.card}>
+        <h4>Spicy Mezcal Smokey Shrimp</h4>
+        <p>Shrimp cooked with chipotle adobe peppers, fire roasted tomatoes and mezcal. Topped with lettuce and radish.</p>
       </div>
 
 
