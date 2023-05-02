@@ -29,7 +29,7 @@ export default function CincoDeMayo2023() {
 
       <div className={styles.card}>
         <h4>Chicken</h4>
-        <p>Shredded chicken breast cooked in salsa verde and onions. Topped with queso fresco.</p>
+        <p>Shredded chicken breast cooked in salsa verde. Topped with onions, cilantro & mexican cheeses.</p>
       </div>
 
       <div className={styles.card}>
