@@ -1,0 +1,43 @@
+
+
+.main {
+  background-color: #3E737A;
+  color: white;
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.menu {
+  margin: 20px 0;
+  border: black 1px solid;
+}
+
+p.payment {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.lower_container {
+  padding: 10px 30px;
+  text-align: left;
+
+}
+
+.order_list {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.order_list li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sublistitem {
+  font-size: 0.9em;
+}
+
+.payment_logo {
+  display: inline-block;
+}
