@@ -13,25 +13,35 @@
   border: black 1px solid;
 }
 
-p.payment {
-  font-size: 0.9em;
+p.screenshot {
+  font-size: 0.8em;
   margin-top: 5px;
+  border: 1px yellow dashed;
+  padding: 5px;
+  font-style: italic;
 }
 
 .lower_container {
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-align: left;
-
 }
 
 .order_list {
   margin-left: 15px;
-  margin-bottom: 15px;
+  font-size: larger;
 }
 
-.order_list li {
-  margin-bottom: 5px;
+.order_list > li {
+  margin-bottom: 20px;
   margin-top: 5px;
+}
+
+.order_list ul {
+  margin: 10px 0;
+}
+
+.order_list ul li {
+  margin: 5px 0;
 }
 
 .sublistitem {
@@ -40,4 +50,19 @@ p.payment {
 
 .payment_logo {
   display: inline-block;
+  width: 100px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.payment_option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: larger;
+}
+
+.payment_option:first-child {
+  margin-top: 35px;
 }

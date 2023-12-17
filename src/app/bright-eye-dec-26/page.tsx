@@ -12,8 +12,8 @@ export default function QuickLinks() {
         alt="Twisted Taco Menu"
         width={0}
         height={0}
-        sizes="80vw"
-        style={{ width: '80%', height: 'auto' }} // optional
+        sizes="100vw"
+        style={{ width: '100%', height: 'auto' }} // optional
         priority
       />
 
@@ -21,42 +21,39 @@ export default function QuickLinks() {
     <div className={styles.lower_container}>
         <ol className={styles.order_list}>
           <li>
-            Send me a message via <a href="https://ig.me/m/the.twisted.taco/ ">instagram</a> to place your order.
-            Please include:
+            Send me a message via <a href="https://ig.me/m/the.twisted.taco/ ">instagram</a> to place your order with
             <ul style={{ marginLeft: '25px'}}>
               <li className={styles.sublistitem}>Your name</li>
               <li className={styles.sublistitem}>Your order</li>
-              <li className={styles.sublistitem}>Payment type (&quot;cash&quot;, &quot;venmo&quot;, or &quot;zelle&quot;)</li>
+              <li className={styles.sublistitem}>Payment type (cash, venmo, zelle)</li>
             </ul>
+            <p className={styles.screenshot}>If using venmo or zelle, please include a screenshot of payment confirmation. <span>🙏</span></p>
+
             </li>
 
-          <li>When your order is ready, I will send a message to come pick it up at the table.</li>
+          <li>When your order is ready, I will send you message.</li>
+          <li>Come to the table to pick up your tacos.</li>
+          <li>Enjoy!</li>
         </ol>
-        <p className={styles.payment}>⚠️ If you are paying with venmo or zelle, please send a screenshot of your payment. 🙏</p>
-        <p className={styles.payment}>If you are paying with cash, we will collect payment when we deliever your tacos.</p>
-        <br />
+        {/*<p className={styles.payment}>If you are paying with cash, we will collect payment when you pick up your order at the table.</p> */}
 
       <div>
-        <p>
-        <Image
-        className={styles.payment_logo}
-        src="/venmo_logo.png"
-        alt="Venmo"
-        width={15}
-        height={15}
-        priority
-      />
-      <a href="https://venmo.com/u/danielgrande21">@danielgrande21</a>
-    </p>
+        <p className={styles.payment_option}>
+        <a href="https://venmo.com/u/danielgrande21">
+        <img
+          className={styles.payment_logo}
+          src="/Venmo_Logo_Blue.png"
+          alt="Venmo"
+        />
+        @danielgrande21
+        </a>
+      </p>
        
-        <p>
-        <Image
+      <p className={styles.payment_option}>
+        <img
         className={styles.payment_logo}
-        src="/zelle_logo.png"
+        src="/zellelogo.png"
         alt="Zelle"
-        width={15}
-        height={15}
-        priority
       />
       (410) 500-2906</p>
       </div>
