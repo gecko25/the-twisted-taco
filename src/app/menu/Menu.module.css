@@ -25,6 +25,13 @@
   margin-top: 20px;
 }
 
+.prices {
+  border: 1px gray solid;
+  padding: 20px 0;
+  width: 85%;
+  margin: auto;
+}
+
 p.screenshot {
   font-size: 0.8em;
   margin-top: 5px;

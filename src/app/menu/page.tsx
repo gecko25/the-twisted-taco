@@ -14,7 +14,7 @@ export default function Menu() {
       title: "Pork Carnitas",
       description:
         "Slow cooked pork lion marinated with pineapple and mexican spices topped with onions, cilantro and queso fresco on top",
-      imageUri: "/pork.jpeg",
+      imageUri: "/pork2.jpeg",
     },
     {
       title: "Cauliflower",
@@ -65,7 +65,14 @@ export default function Menu() {
         ))}
       </div>
 
-      <h1>How to Order</h1>
+      <div className={styles.prices}>
+        <h2>$13 for small plate</h2>
+        <h3>(2 tacos)</h3>
+        <h2>$18 for large plate</h2>
+        <h3>(3 tacos)</h3>
+      </div>
+
+      <h1 style={{ marginTop: "30px" }}>How to Order</h1>
       <div className={styles.lower_container}>
         <ol className={styles.order_list}>
           <li>
@@ -86,7 +93,7 @@ export default function Menu() {
           </li>
 
           <li>When your order is ready, I will send you message.</li>
-          <li>Come to the table to pick up your tacos.</li>
+          <li>Come to the pick up table to get your tacos!</li>
           <li>Enjoy!</li>
         </ol>
         {/*<p className={styles.payment}>If you are paying with cash, we will collect payment when you pick up your order at the table.</p> */}
