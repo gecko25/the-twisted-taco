@@ -30,13 +30,6 @@ export default function Menu() {
     };
   }, []);
 
-  console.log("hasMoreToScroll", hasMoreToScroll);
-  console.log("isScrollable", isScrollable);
-
-  function scrollDown() {
-    console.log("scroll to bottom");
-  }
-
   const MenuItems = [
     {
       title: "Steak",
@@ -67,7 +60,6 @@ export default function Menu() {
           height={100}
           src="/arrow-bottom-direction-green-icon.svg"
           alt="Scroll down"
-          onClick={scrollDown}
         />
       )}
 
