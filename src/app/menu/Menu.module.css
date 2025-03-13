@@ -96,9 +96,9 @@ p.screenshot {
 
 .arrowDown {
   position: fixed;
-  bottom: 0px;
+  bottom: -5px;
   right: 25px;
   margin: 20px auto;
   animation: bounce 1s infinite;
-  opacity: 0.8;
+  opacity: 0.9;
 }
