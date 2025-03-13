@@ -83,3 +83,21 @@ p.screenshot {
 .payment_option:first-child {
   margin-top: 35px;
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.arrowDown {
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  margin: 20px auto;
+  animation: bounce 1s infinite;
+}

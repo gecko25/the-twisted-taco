@@ -1,8 +1,42 @@
+"use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Menu.module.css";
 import MenuItem from "@/components/MenuItem";
 
 export default function Menu() {
+  const [isScrollable, setIsScrollable] = useState(false);
+  const [hasMoreToScroll, setHasMoreToScroll] = useState(false);
+
+  useEffect(() => {
+    function checkScrollable() {
+      const scrollable =
+        document.documentElement.scrollHeight >
+        document.documentElement.clientHeight;
+      setIsScrollable(scrollable);
+      setHasMoreToScroll(
+        window.scrollY <
+          document.documentElement.scrollHeight - window.innerHeight
+      );
+    }
+
+    checkScrollable(); // Check on mount
+    window.addEventListener("scroll", checkScrollable);
+    window.addEventListener("resize", checkScrollable);
+
+    return () => {
+      window.removeEventListener("scroll", checkScrollable);
+      window.removeEventListener("resize", checkScrollable);
+    };
+  }, []);
+
+  console.log("hasMoreToScroll", hasMoreToScroll);
+  console.log("isScrollable", isScrollable);
+
+  function scrollDown() {
+    console.log("scroll to bottom");
+  }
+
   const MenuItems = [
     {
       title: "Steak",
@@ -26,6 +60,17 @@ export default function Menu() {
 
   return (
     <main className={styles.main}>
+      {hasMoreToScroll && (
+        <Image
+          className={styles.arrowDown}
+          width={50}
+          height={100}
+          src="/arrow-bottom-direction-green-icon.svg"
+          alt="Scroll down"
+          onClick={scrollDown}
+        />
+      )}
+
       <div className={styles.logoContainer}>
         <Image
           src="/logo.png"
