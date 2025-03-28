@@ -32,6 +32,13 @@ export default function Menu() {
 
   const MenuItems = [
     {
+      title: "Korean BBQ Short Ribs",
+      description:
+        "Korean BBQ short ribs served with purple coleslaw and mango salsa topped with queso fresco",
+      imageUri: "/chicken.png",
+      show: true,
+    },
+    {
       title: "Steak",
       description:
         "Grilled steak marinated with mexican spices topped with pico de gallo and queso fresco",
@@ -50,21 +57,21 @@ export default function Menu() {
       description:
         "Fried cauliflower on a flour tortilla topped with purple cabbage salad, queso fresco and chipotle mayo.",
       imageUri: "/cauliflower.jpeg",
-      show: false,
+      show: true,
     },
     {
       title: "Cajun Shrimp",
       description:
         "Spicy, pan seared shrimp in a soft flour tortilla bursting with cajun flavors. Topped with shredded lettuce and pico de gallo.",
       imageUri: "/shrimp.png",
-      show: true,
+      show: false,
     },
     {
       title: "Grilled Chicken",
       description:
         "Grilled herb marinated chicken with melted cheddar cheese. Topped with pico de gallo, lettuce and cilantro avocado salsa on top.",
       imageUri: "/chicken.png",
-      show: true,
+      show: false,
     },
   ];
 
@@ -115,6 +122,7 @@ export default function Menu() {
             title={item.title}
             description={item.description}
             imageUri={item.imageUri}
+            showImage={false}
           />
         ))}
       </div>

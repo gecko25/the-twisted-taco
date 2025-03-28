@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.MenuItemNoImage {
+  grid-template-columns: 1fr;
+  margin: 10px 0px 20px;
+}
 
 .menuItemImage {
   object-fit: cover;
@@ -18,4 +22,3 @@
 .textContainer h2 {
   margin-bottom: 10px;
 }
-
